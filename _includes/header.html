@@ -19,10 +19,10 @@
                         <a href="#projects"></a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a class="page-link" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class="page-link" href="#about">About</a>
                     </li>
                 </ul>
             </div>
@@ -31,9 +31,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
+    {% for page in site.pages %}
+      {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
