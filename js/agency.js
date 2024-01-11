@@ -15,6 +15,21 @@ $(function() {
     });
 });
 
+$(function() {
+    function changeSection(sectionId) {
+        $('#projects, #about').hide();
+        $('#' + sectionId).show();
+    }
+
+    $('a.page-scroll').on('click', function(event) {
+        event.preventDefault();
+        var sectionId = $(this).data('section');
+        changeSection(sectionId);
+    });
+
+    changeSection('projects');
+});
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
