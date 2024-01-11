@@ -2,15 +2,19 @@
 <html>
 
   {% include head.html %}
+  {% include header.html %}
+  {% include js.html %}
 
-    <body id="projects" class="index">
+  <body class="index">
+    <div id="projects">
+      {% include portfolio_grid.html %}
+      {% include modals.html %}
+    </div>
 
-    {% include header.html %}
-    {% include portfolio_grid.html %}
-    {% include modals.html %}
-    {% include js.html %}
-
-    </body>
+    <div id="about" style="display:none;">
+      {% include about.html %}
+    </div>
+  </body>
 
 </html>
 
