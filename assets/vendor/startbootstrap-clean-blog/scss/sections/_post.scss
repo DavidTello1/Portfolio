@@ -14,24 +14,24 @@
             opacity: 0;
             background-color: #fec503;      
         }
+    }
+    
+    >.post-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        background-color: #fec503;      
+    }
 
-        >.post-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-            padding: 20px;
-            background-color: #fec503;      
-        }
-
-        >.post-subtitle {
-            margin: 0 auto;
-            padding: 25px;
-            max-width: 400px;
-            text-align: center;
-            background-color: #fff; 
-        }
+    >.post-subtitle {
+        margin: 0 auto;
+        padding: 25px;
+        max-width: 400px;
+        text-align: center;
+        background-color: #fff; 
     }
 }
