@@ -14,11 +14,11 @@ layout: default
           <article class="col-md-4 col-sm-6">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
               <div class="post-preview">
+                <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.title }}">
                 <div class="post-title">
                   <h4>{{ post.title }}</h4>
                   <p class="post-subtitle">{{ post.subtitle }}</p>
                 </div>
-                <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.title }}">
               </div>
             </a>
           </article>

@@ -1,27 +1,32 @@
 // Styling for the post page
 .post-preview {
-    >a {
-        color: $gray-900;
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        max-width: 400px;   
-
-        &:focus,
-        &:hover {
-            text-decoration: none;
-            color: $primary;
-        }
-
-        >.post-title {
-            font-size: 30px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-
-        >.post-subtitle {
-            font-weight: 300;
-            margin: 0 0 10px;
-        }
-    }
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
 }
+
+.post-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .post-title h4 {
+    margin: 0;
+  }
+  
+  .post-title p {
+    margin: 5px 0;
+  }
+  
