@@ -3,13 +3,14 @@
     >a {
         position: absolute;
         display: block;
+        margin: 0 0 15px;
         max-width: 400px;  
         width: 100%;
         height: 100%;
         
         &:focus,
         &:hover {
-            background-color: #fec303ab;      
+            background: #fec303ab;      
         }
     }
     
