@@ -1,7 +1,6 @@
 // Styling for the navbar
 #mainNav {
     position: absolute;
-    border-bottom: 1px solid $gray-200;
     background-color: #333;
     font-family: $headings-font-family;
 
@@ -30,7 +29,6 @@
     }
 
     @media only screen and (min-width: 992px) {
-        border-bottom: 1px solid transparent;
         background: #333;
 
         .navbar-brand {
@@ -75,7 +73,6 @@
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
-            border-bottom: 1px solid darken($white, .05);
             background-color: #333;
 
             .navbar-brand {
