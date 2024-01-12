@@ -1,12 +1,11 @@
 // Styling for the post page
 .post-preview {
     display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;  
     position: absolute;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    max-width: 400px;  
 
     &:focus,
     &:hover {
