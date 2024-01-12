@@ -2,6 +2,10 @@
 .post-preview {
     >a {
         color: $gray-900;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        max-width: 400px;   
 
         &:focus,
         &:hover {
