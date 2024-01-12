@@ -16,7 +16,7 @@
 
     &:hover,
     &:focus,
-    &:not(:disabled):not(.disabled):active
+    &:not(:disabled):not(.disabled):active,
     &:active {
         color: #555;
         background-color: transparent;
