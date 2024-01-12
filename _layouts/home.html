@@ -3,18 +3,18 @@ layout: default
 ---
 
   <div class="container">
-    <div class="row" style="margin-top: 100px;">
+    <div class="row" style="margin-top: 100px; margin-bottom: 30px;">
 
       {{ content }}
 
       <!-- Projects List -->
       {% for post in site.posts %}
 
-      <article class="col-md-4 col-sm-6">
+      <article class="col-md-4 col-sm-6" style="margin-bottom: 15px;">
         <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-          <div class="post-preview" style="margin-bottom: 15px;">
+          <div class="post-preview">
             <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.title }}" style="max-width: 100%;">
-            <div class="post-content" style="text-align: center;">
+            <div class="post-content">
               <h4>{{ post.title }}</h4>
               <p class="post-subtitle">{{ post.subtitle }}</p>
             </div>
