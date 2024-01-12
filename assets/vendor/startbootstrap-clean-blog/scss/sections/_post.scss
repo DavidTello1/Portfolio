@@ -6,6 +6,17 @@
         height: 100%;
     }   
 
+    >.post-header {
+        position: absolute;
+        width: 100%;
+        background-color: #808080;
+        text-align: center;
+
+        >.info {
+            text-align: left;
+        }
+    }
+
     >.post-content {
         position: absolute;
         top: 50%;
