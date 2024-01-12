@@ -16,8 +16,10 @@
 
     &:hover,
     &:focus,
+    &:active,
     &:not(:disabled):not(.disabled):active,
-    &:active {
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
         color: #555;
         background-color: transparent;
         border-color: transparent;
