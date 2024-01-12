@@ -4,28 +4,24 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto" style="padding-top: 70px;">
 
-        {{ content }}
+      {{ content }}
 
-        <!-- Projects List -->
-        <div class="row">
-        {% for post in site.posts %}
+      <!-- Projects List -->
+      {% for post in site.posts %}
 
-          <article class="col-md-4 col-sm-6">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <div class="post-preview">
-                <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.title }}" style="max-width: 400px;">
-                <div class="post-content" style="text-align: center;">
-                  <h4>{{ post.title }}</h4>
-                  <p class="post-subtitle">{{ post.subtitle }}</p>
-                </div>
-              </div>
-            </a>
-          </article>
-        
-        {% endfor %}
-        </div>
-      </div>
+      <article class="col-md-4 col-sm-6">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <div class="post-preview">
+            <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.title }}" style="max-width: 400px;">
+            <div class="post-content" style="text-align: center;">
+              <h4>{{ post.title }}</h4>
+              <p class="post-subtitle">{{ post.subtitle }}</p>
+            </div>
+          </div>
+        </a>
+      </article>
+      
+      {% endfor %}
     </div>
   </div>
