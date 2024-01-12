@@ -10,8 +10,8 @@ layout: default
 
         <!-- Projects List -->
         {% for post in site.posts %}
-        
-          <div class="col-md-4 col-sm-6 portfolio-item">
+
+          <article class="col-md-4 col-sm-6">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
               <div class="post-preview">
                   <div class="post-title">
@@ -21,7 +21,7 @@ layout: default
               </div>
               <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
             </a>
-          </div>
+          </article>
         
         {% endfor %}
       </div>
