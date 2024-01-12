@@ -11,17 +11,17 @@ layout: default
         <!-- Projects List -->
         {% for post in site.posts %}
 
-        <article class="col-md-4 col-sm-6">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <div class="project-card">
-              <img src="img/posts/{{ post.thumbnail }}" class="img-responsive" alt="{{ post.title }}">
-              <div class="project-details">
-                <h4>{{ post.title }}</h4>
-                <p class="project-subtitle">{{ post.subtitle }}</p>
+          <article class="col-md-4 col-sm-6">
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <div class="post-preview">
+                <div class="post-title">
+                  <h4>{{ post.title }}</h4>
+                  <p class="post-subtitle">{{ post.subtitle }}</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </article>
+              <img src="img/posts/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+            </a>
+          </article>
         
         {% endfor %}
       </div>
