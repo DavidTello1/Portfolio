@@ -7,9 +7,9 @@ layout: default
     <div class="row" style="height: 100%; background-color: #c7c7c7;">
       
       <!-- Contact -->
-      <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center">
+      <div class="col-xs-12 col-md-6 d-flex flex-column align-items-center" style="margin-top: 100px;">
 
-        <div class="row mb-3">
+        <div class="row mb-3" style="margin-bottom: 20px !important;">
           <div class="col-md-6 linkedin-icon">
             <i class="fab fa-linkedin fa-3x"></i>
           </div>
@@ -18,16 +18,16 @@ layout: default
           </div>
         </div>
 
-        <h4 class="email text-center"> {{ site.email }} </h4>
+        <h4 class="email text-center " style="font-weight: 700;font-size: 20px; margin-bottom: 20px;"> {{ site.email }} </h4>
 
         <a class="resume" href="{{ site.cv_link }}" target="_blank">
-          <button class="btn btn-default btn-lg">See Resume</button>  
+          <button class="btn btn-secondary" style="border-radius: 0.5em;">See Resume</button>  
         </a>
 
       </div>
 
       <!-- Info -->
-      <div class="col-xs-12 col-md-6 pull-right">
+      <div class="col-xs-12 col-md-6 pull-right" style="margin-top: 100px;">
 
         {{ content }}
 
