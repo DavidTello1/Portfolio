@@ -29,19 +29,19 @@
 }
 
 .btn-secondary {
-    color: #fec503;
+    color: #fff;
     background-color: #333;
     border-color: transparent;
     border-radius: 0.5em;
     box-shadow: none;
-
+    
     &:hover,
     &:focus,
     &:active,
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-        color: #fed136;
+        color: #fec503;
     }
 }
 
