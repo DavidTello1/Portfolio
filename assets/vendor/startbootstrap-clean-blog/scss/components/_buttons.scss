@@ -31,12 +31,14 @@
     padding: 25px 35px;
 }
 
-.linkedin-icon a,
-.github-icon a {
-  color: #fff;
+.linkedin-icon,
+.github-icon {
+    >a {
+        color: #fff;
 
-  &:hover,
-  &:focus {
-    color: #fec503;
-  }
+        &:hover,
+        &:focus {
+            color: #fec503;
+        }
+    }
 }
