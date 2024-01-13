@@ -1,6 +1,5 @@
 // Bootstrap overrides for this template
 .btn {
-    color: #333;
     font-size: 14px;
     font-weight: 800;
     padding: 15px 25px;
@@ -12,8 +11,10 @@
 }
 
 .btn-primary {
+    color: #333;
     background-color: transparent;
     border-color: transparent;
+    box-shadow: none;
 
     &:hover,
     &:focus,
@@ -32,6 +33,7 @@
     background-color: #333;
     border-color: transparent;
     border-radius: 0.5em;
+    box-shadow: none;
 
     &:hover,
     &:focus,
