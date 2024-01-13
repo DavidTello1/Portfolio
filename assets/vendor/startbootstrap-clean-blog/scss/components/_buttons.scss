@@ -8,6 +8,7 @@
     text-transform: uppercase;
     border-radius: 0;
     font-family: $headings-font-family;
+    box-shadow: none;
 }
 
 .btn-primary {
@@ -21,6 +22,24 @@
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
         color: #555;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.btn-secondary {
+    color: #fec503;
+    background-color: #333;
+    border-color: transparent;
+    border-radius: 0.5em;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+        color: #fed136;
         background-color: transparent;
         border-color: transparent;
     }
