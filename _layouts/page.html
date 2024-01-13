@@ -4,34 +4,32 @@ layout: default
 
   <!-- About Page -->
   <div class="container">
-    <div class="row" style="background-color: #c7c7c7;">
-      <div class="col-lg-8 col-md-10 mx-auto" style="margin-top: 100px; margin-bottom: 30px;">
+    <div class="row" style="height: 100%; background-color: #c7c7c7;">
+      
+      <!-- Contact -->
+      <div class="col-xs-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
 
-        <!-- Contact -->
-        <div class="col-xs-12 col-md-6 pull-left">
-
-          <div class="linkedin-icon">
-
-          </div>
-
-          <div class="github-icon">
+        <div class="row mb-3">
+          <div class="col-md-6 linkedin-icon">
 
           </div>
+          <div class="col-md-6 github-icon">
 
-          <h4 class="text-center"> {{ site.email }} </h4>
-
-          <a class="btn btn-primary" href="{{ site.cv_link }}" target="_blank">
-            <button class="btn btn-default btn-lg">See Resume</button>  
-          </a>
-
+          </div>
         </div>
+        
+        <h4 class="email text-center"> {{ site.email }} </h4>
 
-        <!-- Info -->
-        <div class="col-xs-12 col-md-6 pull-right" style="padding-top: 70px;">
+        <a class="resume" href="{{ site.cv_link }}" target="_blank">
+          <button class="btn btn-default btn-lg">See Resume</button>  
+        </a>
 
-          {{ content }}
+      </div>
 
-        </div>
+      <!-- Info -->
+      <div class="col-xs-12 col-md-6 pull-right">
+
+        {{ content }}
 
       </div>
     </div>
