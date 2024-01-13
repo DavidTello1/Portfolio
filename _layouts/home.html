@@ -10,6 +10,9 @@ layout: default
       <!-- Projects List -->
       {% for post in site.posts %}
 
+      <h3>Projects</h3>
+      <hr>
+
       <article class="col-md-4 col-sm-6" style="margin-bottom: 15px;">
         <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
           <div class="post-preview">
