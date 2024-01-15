@@ -8,35 +8,48 @@ year: "2019"
 numMembers: "2"
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<video>Gameplay Video</video>
+<span class="caption text-muted">Gameplay video</span>
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<h2>Role</h2>
+This project was made for a university subject in a team of 2. 
+We didn't have specific roles during the development of the project, instead we both did a little bit of everything. 
+In the next section I have detailed the features I implemented for this project.
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<h2>Features</h2>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<h3>Level Design</h3>
+The game was required to be a 2D platformer with two levels.
+The levels were designed taking inspiration from Super Mario Bros games, //***
+//***
+- coins
+- grids
+- boxes
+- level transition
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<h3>Entity System</h3>
+The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.
+The entities are the following;
+- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.
+- Coins: coins you can collect that give you points.
+- Grids: moving grids you can grip to advance the level.
+- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put.
+- Boxes: special boxes that are keys to advance the level, interconnected with the boxes in the other level.
+//***
 
-<h2 class="section-heading">The Final Frontier</h2>
+<h3>Scene Manager</h3>
+The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.
+//***
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h3>UI System</h3>
+The UI system is in charge of all the UI elements in the scene, used for creating all the menus and the HUD.
+//***
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h3>Music and SFX</h3>
+Using SDL to manage the audio files, I added a theme for the main menu and another one for the levels. I also added some sound effects for the player interactions, like picking up a coin, jumping or dying.
+//***
 
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>
+<h2>Links</h2>
+<p>Github Repository</p>
+<p>Project Website</p>
+<p>Download Project</p>
