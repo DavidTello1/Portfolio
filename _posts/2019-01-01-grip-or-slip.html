@@ -8,46 +8,58 @@ year: "2019"
 numMembers: "2"
 ---
 
-<video>Gameplay Video</video>
-<span class="caption text-muted">Gameplay video</span>
+<div class="text-center" style="width: 80%;">
+    <iframe id="video" src="https://www.youtube.com/embed/TjO6OkSbQKA" frameborder="0" allowfullscreen></iframe>
+    <span class="caption text-muted">Gameplay video</span>
+</div>
+<br>
 
-<h2>Role</h2>
-This project was made for a university subject in a team of 2. 
-We didn't have specific roles during the development of the project, instead we both did a little bit of everything. 
-In the next section I have detailed the features I implemented for this project.
+<h3>Role</h3>
+<p>This project was made for a university subject in a team of 2.</p>
+<p>We didn't have specific roles during the development of the project, instead we both did a little bit of everything.</p>
+<p>In the next section I have detailed the features I implemented for this project.</p>
 
-<h2>Features</h2>
+<br>
 
-<h3>Level Design</h3>
-The game was required to be a 2D platformer with two levels.
-The levels were designed taking inspiration from Super Mario Bros games, //***
-//***
-- coins
-- grids
-- boxes
-- level transition
+<h3>Features</h3>
+
+<h5>Level Design</h5>
+<p> 
+    <p>The game was required to be a 2D platformer with two levels.</p>
+    <p>The levels were designed taking inspiration from Super Mario Bros games, //***</p>
+    <p>//***</p>
+    <p>- coins</p>
+    <p>- grids</p>
+    <p>- boxes</p>
+    <p>- level transition</p>
+</p>
+<br>
 
 <h3>Entity System</h3>
-The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.
-The entities are the following;
-- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.
-- Coins: coins you can collect that give you points.
-- Grids: moving grids you can grip to advance the level.
-- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put.
-- Boxes: special boxes that are keys to advance the level, interconnected with the boxes in the other level.
-//***
+<p>The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.</p>
+<p>The entities are the following;</p>
+<p>- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.</p>
+<p>- Coins: coins you can collect that give you points.</p>
+<p>- Grids: moving grids you can grip to advance the level.</p>
+<p>- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put.</p>
+<p>- Boxes: special boxes that are keys to advance the level, interconnected with the boxes in the other level.</p>
+<p>//***</p>
+<br>
 
 <h3>Scene Manager</h3>
-The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.
-//***
+<p>The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.</p>
+<p>//***</p>
+<br>
 
 <h3>UI System</h3>
-The UI system is in charge of all the UI elements in the scene, used for creating all the menus and the HUD.
-//***
+<p>The UI system is in charge of all the UI elements in the scene, used for creating all the menus and the HUD.</p>
+<p>//***</p>
+<br>
 
 <h3>Music and SFX</h3>
-Using SDL to manage the audio files, I added a theme for the main menu and another one for the levels. I also added some sound effects for the player interactions, like picking up a coin, jumping or dying.
-//***
+<p>Using SDL to manage the audio files, I added a theme for the main menu and another one for the levels. I also added some sound effects for the player interactions, like picking up a coin, jumping or dying.</p>
+<p>//***</p>
+<br>
 
 <h2>Links</h2>
 <p>Github Repository</p>
