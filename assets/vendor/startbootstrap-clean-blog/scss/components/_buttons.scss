@@ -43,6 +43,23 @@
     }
 }
 
+.btn-tertiary {
+    color: #fff;
+    background-color: #555;
+    border-color: transparent;
+    border-radius: 0.5em;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+        color: #fec503; 
+        background-color: #555;
+    }
+}
+
 .btn-lg {
     font-size: 16px;
     padding: 25px 35px;
