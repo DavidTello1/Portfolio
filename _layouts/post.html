@@ -12,14 +12,14 @@ layout: default
           <h2 style="font-size: 20px; font-weight: 400; color: #777;">{{ page.year }} &middot; Team of {{ page.numMembers }}</h2>
           <p style="margin-bottom: 0px;">{{ page.description }}</p>
           <div class="text-center">
-            {% if page.repository.url %}
-            <a href={{ page.repository }} class="btn btn-secondary">Github Repository</a>
+            {% if page.repository %}
+            <a href="{{ page.repository }}" class="btn btn-secondary">Github Repository</a>
             {% endif %}
-            {% if page.website.url %}
-            <a href={{ page.website }} class="btn btn-secondary">Project Website</a>
+            {% if page.website %}
+            <a href="{{ page.website }}" class="btn btn-secondary">Project Website</a>
             {% endif %}
-            {% if page.download.url %}
-            <a href={{ page.download }} class="btn btn-secondary">Direct Download</a>
+            {% if page.download %}
+            <a href="{{ page.download }}" class="btn btn-secondary">Direct Download</a>
             {% endif %}
         </div>
         </div>
