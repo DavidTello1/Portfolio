@@ -3,63 +3,58 @@ layout: post
 title: "Grip or Slip"
 subtitle: "2D Platformer"
 thumbnail: "05.jpg"
-description: "2D platformer where you have to swap between the two maps to complete the game, made with C++ and SDL."
+description: "2D platformer where you have to swap between the two levels to complete the game, made with C++ and SDL."
 year: "2019"
 numMembers: "2"
 repository: "https://github.com/DavidTello1/Development"
 website: "https://davidtello1.github.io/Development/"
 download: "https://github.com/DavidTello1/Development/releases/download/v3.0/Grip.or.Slip.zip"
+gameplay: "https://www.youtube.com/embed/5kGt-fx4ABg"
 ---
 
-<div class="video-container text-center">
-    <iframe src="https://www.youtube.com/embed/5kGt-fx4ABg" frameborder="0" allowfullscreen></iframe>
-    <span class="caption text-muted">Gameplay video</span>
-</div>
+<h3>Description</h3>
+    <p>This project was made for a university subject in a team of 2.</p>
+    <p>The requirements for this project were to make a 2D platformer with two levels and two types of enemies.</p>
 <br>
 
 <h3>Role</h3>
-<p>This project was made for a university subject in a team of 2.</p>
-<p>We didn't have specific roles during the development of the project, instead we both did a little bit of everything.</p>
-<p>In the next section I have detailed the features I implemented for this project.</p>
-
+    <p>We didn't have specific roles during the development of the project, instead we both did a little bit of everything.</p>
+    <p>In the next section I have detailed the features I implemented for this project.</p>
 <br>
 
 <h3>Features</h3>
-
 <h5>Level Design</h5>
 <p> 
-    <p>The game was required to be a 2D platformer with two levels.</p>
-    <p>The levels were designed taking inspiration from Super Mario Bros games, //***</p>
-    <p>//***</p>
-    <p>- coins</p>
-    <p>- grids</p>
-    <p>- boxes</p>
-    <p>- level transition</p>
+    <p>The levels were designed taking inspiration from Super Mario Bros games, the levels are divided into areas were you can rest and areas were you have a platforming section or an enemy encounter. This is done so the player can have a moment to stop and think about the next set of actions they have to perform.</p>
+    <p>There are coins around the level to help guide the player and also give an extra challenge if you want to collect all of them, as some are in difficult to reach areas.</p>
+    <p>As an interactable objects there are moving grids you can grip and move inside, they provide a small challenge forcing the player to time the jumps with the movement of the grids.</p>
+    <p>One idea I really liked was to have both levels interconnected and you had to switch between them to get keys and open locks. To achieve this I added the 'Special Boxes' which are boxes that when you latch onto them they carry you in its path. </p>
+    <p>In each level there are the same number of boxes and they are linked one to one, when one of them moves the other will move aswell in its own map and when you change the level it will appear in its new position.</p>
 </p>
 <br>
 
 <h5>Entity System</h5>
-<p>The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.</p>
-<p>The entities are the following;</p>
-<p>- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.</p>
-<p>- Coins: coins you can collect that give you points.</p>
-<p>- Grids: moving grids you can grip to advance the level.</p>
-<p>- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put.</p>
-<p>- Boxes: special boxes that are keys to advance the level, interconnected with the boxes in the other level.</p>
-<p>//***</p>
+    <p>The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.</p>
+    <p>The entities are the following;</p>
+    <p>- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.</p>
+    <p>- Coins: coins you can collect that give you points.</p>
+    <p>- Grids: moving grids you can grip to advance the level.</p>
+    <p>- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put. A little detail I added for the land enemy is that when it dies, its corpse will stay there.</p>
+    <p>- Special Boxes: they are keys to advance the level and are interconnected with the boxes in the other level.</p>
+    //*** Dash gif / coins img / grids gif / enemies img / dead enemy img / special boxes
 <br>
 
 <h5>Scene Manager</h5>
-<p>The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.</p>
-<p>//***</p>
+    <p>The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.</p>
+    <p>The levels were done in Tiled and the maps loaded using xml.</p>
+    //*** Transition gif
 <br>
 
 <h5>UI System</h5>
-<p>The UI system is in charge of all the UI elements in the scene, used for creating all the menus and the HUD.</p>
-<p>//***</p>
+    <p>The UI system is in charge of all the UI elements in the scene, used for creating all the menus and the HUD.</p>
+    //***Main Menu img / Pause Menu img
 <br>
 
 <h5>Music and SFX</h5>
-<p>Using SDL to manage the audio files, I added a theme for the main menu and another one for the levels. I also added some sound effects for the player interactions, like picking up a coin, jumping or dying.</p>
-<p>//***</p>
+    <p>Using SDL to manage the audio files, I added a theme for the main menu and another one for the levels. I also added some sound effects for the player interactions, like picking up a coin, killing an enemy or dying.</p>
 <br>

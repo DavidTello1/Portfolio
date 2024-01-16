@@ -7,6 +7,7 @@ layout: default
     <div class="row" style="background-color: #c7c7c7;">
       <div class="col-lg-8 col-md-10 mx-auto" style="margin-top: 90px; margin-bottom: 30px;">
 
+        <!-- Header -->
         <div class="post-header text-center">
           <h1>{{ page.title }}</h1>
           <h2 style="font-size: 20px; font-weight: 400; color: #777;">{{ page.year }} &middot; Team of {{ page.numMembers }}</h2>
@@ -26,6 +27,15 @@ layout: default
         
         <hr style="max-width: 25%; border-width: 3px; margin-top: 0px;">
 
+        <!-- Gameplay Video -->
+        {% if page.gameplay %}
+        <div class="video-container text-center">
+          <iframe src="{{ page.gameplay }}" frameborder="0" allowfullscreen></iframe>
+          <span class="caption text-muted">Gameplay video</span>
+        </div>
+        <br>
+        {% endif %}
+        
         {{ content }}
 
         <hr>
