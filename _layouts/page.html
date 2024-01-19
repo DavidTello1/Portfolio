@@ -4,7 +4,7 @@ layout: default
 
   <!-- About Page -->
   <div class="container">
-    <div class="row" style="margin-top: 90px; margin-bottom: 30px;">
+    <div class="row">
 
       <!-- Title -->
       <div class="text-center" style="width: 100%;">
@@ -12,27 +12,27 @@ layout: default
         <hr style="max-width: 50%;border-width: 3px;border-radius: 5px;margin-top: 8px;border-color: #333;">
       </div>
 
-      <!-- Contact -->
-      <div class="col-md-8">
+      <div class="row" style="max-width: 70%; margin: 90px auto 30px auto;">
+        <!-- Contact -->
         <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center" style="margin-bottom: 20px;">
-
+        
           <div class="row mb-3 justify-content-center" style="margin-bottom: 20px !important;">
             <div class="elliptical-mask">
               <img src="{{ site.picture }}" alt="Profile Picture" class="img-fluid">
             </div>
           </div>
-
+        
           <a class="resume" href="{{ site.cv_link }}" target="_blank">
             <button class="btn btn-secondary" style="box-shadow: none;">See Resume</button>  
           </a>
-
+        
         </div>
-
+      
         <!-- Info -->
         <div class="col-xs-12 col-md-6 pull-right" style="color: #fff;">
-
+        
           {{ content }}
-
+        
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ layout: default
         </a>
       </div>
       <div class="btn-icon">
-        <a href="mailto:{{ site.github_url }}" target="_blank">
+        <a href="mailto:{{ site.email }}" target="_blank">
           <i class="far fa-envelope fa-3x"></i>
         </a>
       </div>
