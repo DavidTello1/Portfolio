@@ -4,34 +4,36 @@ layout: default
 
   <!-- About Page -->
   <div class="container">
-    <div class="row" style="margin-top: 90px; margin-bottom: 30px;">
-      
-      <!-- Title -->
-      <div class="text-center" style="width: 100%;">
-        <h3 style="color: #333;">About Me</h3>
-        <hr style="max-width: 50%;border-width: 3px;border-radius: 5px;margin-top: 8px;border-color: #333;">
-      </div>
+    <div class="col-md-6" style="margin-top: 90px; margin-bottom: 30px;">
+      <div class="row">
 
-      <!-- Contact -->
-      <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center" style="margin-bottom: 20px;">
-
-        <div class="row mb-3 justify-content-center" style="margin-bottom: 20px !important; margin-top: 20px;">
-          <div class="elliptical-mask">
-            <img src="{{ site.picture }}" alt="Profile Picture" class="img-fluid">
-          </div>
+        <!-- Title -->
+        <div class="text-center" style="width: 100%;">
+          <h3 style="color: #333;">About Me</h3>
+          <hr style="max-width: 50%;border-width: 3px;border-radius: 5px;margin-top: 8px;border-color: #333;">
         </div>
 
-        <a class="resume" href="{{ site.cv_link }}" target="_blank">
-          <button class="btn btn-secondary" style="box-shadow: none;">See Resume</button>  
-        </a>
+        <!-- Contact -->
+        <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center" style="margin-bottom: 20px;">
 
-      </div>
+          <div class="row mb-3 justify-content-center" style="margin-bottom: 20px !important; margin-top: 20px;">
+            <div class="elliptical-mask">
+              <img src="{{ site.picture }}" alt="Profile Picture" class="img-fluid">
+            </div>
+          </div>
 
-      <!-- Info -->
-      <div class="col-xs-12 col-md-6 pull-right" style="color: #fff;">
+          <a class="resume" href="{{ site.cv_link }}" target="_blank">
+            <button class="btn btn-secondary" style="box-shadow: none;">See Resume</button>  
+          </a>
 
-        {{ content }}
+        </div>
 
+        <!-- Info -->
+        <div class="col-xs-12 col-md-6 pull-right" style="color: #fff;">
+
+          {{ content }}
+
+        </div>
       </div>
     </div>
 
