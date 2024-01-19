@@ -72,12 +72,10 @@
 .linkedin-icon,
 .github-icon,
 .email-icon {
-    >a {
-        color: #fff;
+    color: #fff;
 
-        &:hover,
-        &:focus {
-            color: #fec503;
-        }
+    &:hover,
+    &:focus {
+        color: #fec503;
     }
 }
