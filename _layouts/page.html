@@ -16,16 +16,7 @@ layout: default
       <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center">
 
         <div class="row mb-3 justify-content-center" style="margin-bottom: 20px !important; margin-top: 20px;">
-          <div class="col-md-6 linkedin-icon">
-            <a href="{{ site.linkedin_url }}" target="_blank">
-              <i class="fab fa-linkedin fa-3x"></i>
-            </a>          
-          </div>
-          <div class="col-md-6 github-icon">
-            <a href="{{ site.github_url }}" target="_blank">
-              <i class="fab fa-github fa-3x"></i>
-            </a>
-          </div>
+          
         </div>
 
         <h4 class="email text-center " style="font-weight: 700;font-size: 20px; margin-bottom: 20px; color: #fff;"> {{ site.email }} </h4>
@@ -42,5 +33,25 @@ layout: default
         {{ content }}
 
       </div>
+
+      <!-- Icons at the bottom -->
+      <div class="col-12 mt-3 text-center">
+        <div class="col-md-6 linkedin-icon">
+          <a href="{{ site.linkedin_url }}" target="_blank">
+            <i class="fab fa-linkedin fa-3x mx-2"></i>
+          </a>          
+        </div>
+        <div class="col-md-6 github-icon">
+          <a href="{{ site.github_url }}" target="_blank">
+            <i class="fab fa-github fa-3x mx-2"></i>
+          </a>
+        </div>
+        <div class="col-md-6 email-icon">
+          <a href="mailto:{{ site.email }}" target="_blank">
+            <i class="fab fa-envelope fa-3x mx-2"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
