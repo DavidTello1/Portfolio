@@ -13,7 +13,7 @@ layout: default
       </div>
 
       <!-- Contact -->
-      <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center">
+      <div class="col-xs-12 col-md-5 d-flex flex-column align-items-center" style="margin-bottom: 20px;">
 
         <div class="row mb-3 justify-content-center" style="margin-bottom: 20px !important; margin-top: 20px;">
           <!-- Profile Img -->
@@ -35,21 +35,15 @@ layout: default
       <!-- Icons at the bottom -->
       <div class="row justify-content-center">
         <div class="col-auto mt-3 text-center">
-          <div class="linkedin-icon">
-            <a href="{{ site.linkedin_url }}" target="_blank">
-              <i class="fab fa-linkedin fa-3x mx-2"></i>
-            </a>          
-          </div>
-          <div class="github-icon">
-            <a href="{{ site.github_url }}" target="_blank">
-              <i class="fab fa-github fa-3x mx-2"></i>
-            </a>
-          </div>
-          <div class="email-icon">
-            <a href="mailto:{{ site.email }}" target="_blank">
-              <i class="far fa-envelope fa-3x mx-2"></i>
-            </a>
-          </div>
+          <a class="linkedin-icon" href="{{ site.linkedin_url }}" target="_blank">
+            <i class="fab fa-linkedin fa-3x mx-2"></i>
+          </a>          
+          <a class="github-icon" href="{{ site.github_url }}" target="_blank">
+            <i class="fab fa-github fa-3x mx-2"></i>
+          </a>
+          <a class="email-icon" href="mailto:{{ site.email }}" target="_blank">
+            <i class="far fa-envelope fa-3x mx-2"></i>
+          </a>
         </div>
       </div>
 
