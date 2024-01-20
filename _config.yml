@@ -26,11 +26,4 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-    order:
-      - grip-or-slip.html
-      - command-and-conquer-warzone.html
-      - davos-game-engine.html
-      - the-witcher-ties-of-destiny.html
-      - s-team.html
-      - optimization-techniques-for-a-2D-engine.html
-      - map-generator.html
+    sort_by: order 
