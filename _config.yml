@@ -21,7 +21,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 
-
 # Collections
 collections:
   projects:
@@ -29,7 +28,7 @@ collections:
     permalink: /:collection/:path/
     order:
       - grip-or-slip.html
-      - command-and-conquer.html
+      - command-and-conquer-warzone.html
       - davos-game-engine.html
       - the-witcher-ties-of-destiny.html
       - s-team.html
