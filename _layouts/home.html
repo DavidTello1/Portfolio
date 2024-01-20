@@ -13,7 +13,7 @@ layout: default
         <hr style="max-width: 50%;border-width: 3px;border-radius: 5px;margin-top: 8px;border-color: #333;">
       </div>
 
-      {% for post in site.pages %}
+      {% for post in site.projects %}
 
       <article class="col-md-4 col-sm-6" style="margin-bottom: 15px;">
         <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
