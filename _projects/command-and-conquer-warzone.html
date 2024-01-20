@@ -11,11 +11,11 @@ website: "https://stormhowlers.github.io/Command_and_Conquer_WarZone/"
 download: "https://github.com/stormhowlers/Command_and_Conquer_WarZone/releases/download/v1.0/Command.Conquer_WarZone_v1.0.Gold.zip"
 gameplay: "https://www.youtube.com/embed/sSNUHI5_8Dg"
 images:
-    build_system: "mine.gif"
-    sprite_ordering: "sprite_ordering.png"
-    lifebars_1: "lifebars.png"
-    lifebars_2: "lifebars2.png"
-    tower_range: "tower_range.png"
+    build_system: "img/posts/Command_and_Conquer/mine.gif"
+    sprite_ordering: "img/posts/Command_and_Conquer/sprite_ordering.png"
+    lifebars_1: "img/posts/Command_and_Conquer/lifebars.png"
+    lifebars_2: "img/posts/Command_and_Conquer/lifebars2.png"
+    tower_range: "img/posts/Command_and_Conquer/tower_range.png"
 ---
 
 <h3>Description</h3>
@@ -41,26 +41,26 @@ images:
 <h5>Build System</h5>
     <p>Implemented the system to place and build buildings. Showing a preview of the building and the restrictions when placing it.</p>
     <div class="post-preview">
-        <img class="img-fluid" src="img/posts/06.jpg" alt="">
+        <img class="img-fluid" src="{{ page.build_system | prepend: site.baseurl }}" alt="">
     </div>
     <span class="caption text-muted">Build System</span>
 <br>
 
 <h5>Sprite Ordering</h5>
     <p>Implemented sprite ordering to draw the entities with the correct depth</p>
-    <img class="img-fluid" src="img/posts/06.jpg" alt="">
+    <img class="img-fluid" src="{{ page.images.sprite_ordering  | prepend: site.baseurl }}" alt="">
     <span class="caption text-muted">Sprite Ordering</span>
 <br>
 
 <h5>Healthbars</h5>
     <p>Added healthbars to every entity to show its current health.</p>
-    <img class="img-fluid" src="img/posts/Command_and_Conquer/{{ page.images.lifebars_1 }}" alt="">
-    <img class="img-fluid" src="img/posts/Command_and_Conquer/{{ page.images.lifebars_2 }}" alt="">
+    <img class="img-fluid" src="{{ page.images.lifebars_1  | prepend: site.baseurl }}" alt="">
+    <img class="img-fluid" src="{{ page.images.lifebars_2  | prepend: site.baseurl }}" alt="">
     <span class="caption text-muted">Healthbars</span>
 <br>
 
 <h5>Tower-Range & AoE Tower</h5>
     <p>Implemented a feature to show the range of a deffensive tower when building and a priority queue for the tower's targets.</p>
-    <img class="img-fluid" src="img/posts/Command_and_Conquer/{{ page.images.tower_range }}" alt="">
+    <img class="img-fluid" src="{{ page.images.tower_range  | prepend: site.baseurl }}" alt="">
     <span class="caption text-muted">Tower Range</span>
 <br>
