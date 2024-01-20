@@ -11,6 +11,13 @@ repository: "https://github.com/stormhowlers/Command_and_Conquer_WarZone"
 website: "https://stormhowlers.github.io/Command_and_Conquer_WarZone/"
 download: "https://github.com/stormhowlers/Command_and_Conquer_WarZone/releases/download/v1.0/Command.Conquer_WarZone_v1.0.Gold.zip"
 gameplay: "https://www.youtube.com/embed/sSNUHI5_8Dg"
+images:
+    build_system: "img/posts/Command_and_Conquer/mine.gif"
+    sprite_ordering: "img/posts/Command_and_Conquer/sprite_ordering.png"
+    lifebars_1: "img/posts/Command_and_Conquer/lifebars.png"
+    lifebars_2: "img/posts/Command_and_Conquer/lifebars2.png"
+    tower_range: "img/posts/Command_and_Conquer/tower_range.png"
+
 ---
 
 <h3>Description</h3>
@@ -35,24 +42,26 @@ gameplay: "https://www.youtube.com/embed/sSNUHI5_8Dg"
 
 <h5>Build System</h5>
     <p>Implemented the system to place and build buildings. Showing a preview of the building and the restrictions when placing it.</p>
-    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-        <img class="img-fluid" src="img/posts/Command-and-Conquer/mine.gif" alt="">
-        <span class="caption text-muted">Build System</span>
-    </a>
+    <img class="img-fluid" src="{{ page.images.build_system }}" alt="">
+    <span class="caption text-muted">Build System</span>
 <br>
 
 <h5>Sprite Ordering</h5>
     <p>Implemented sprite ordering to draw the entities with the correct depth</p>
-    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-        <img class="img-fluid" src="img/posts/Command-and-Conquer/sprite_ordering.png" alt="">
-        <span class="caption text-muted">Sprite Ordering</span>
-    </a>
+    <img class="img-fluid" src="{{ page.images.sprite_ordering }}" alt="">
+    <span class="caption text-muted">Sprite Ordering</span>
 <br>
 
 <h5>Healthbars</h5>
     <p>Added healthbars to every entity to show its current health.</p>
+    <img class="img-fluid" src="{{ page.images.lifebars_1 }}" alt="">
+    <span class="caption text-muted">Build System</span>
+    <img class="img-fluid" src="{{ page.images.lifebars_2 }}" alt="">
+    <span class="caption text-muted">Build System</span>
 <br>
 
 <h5>Tower-Range & AoE Tower</h5>
     <p>Implemented a feature to show the range of a deffensive tower when building and a priority queue for the tower's targets.</p>
+    <img class="img-fluid" src="{{ page.images.tower_range }}" alt="">
+    <span class="caption text-muted">Build System</span>
 <br>
