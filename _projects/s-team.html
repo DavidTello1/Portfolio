@@ -11,6 +11,16 @@ repository: "https://github.com/JosepLleal/GameJam_S-Team"
 website: "https://martekings.itch.io/s-team"
 download: "https://github.com/JosepLleal/GameJam_S-Team/releases/download/STEAM1.0/Martekings_S-Team.zip"
 gameplay: "https://www.youtube.com/embed/LnSK6H21Vuw"
+images:
+    level_1: "/img/posts/S_Team/level_1.jpg"
+    level_3: "/img/posts/S_Team/level_3.jpg"
+    power_1: "/img/posts/S_Team/power_1.jpg"
+    power_2: "/img/posts/S_Team/power_2.jpg"
+    puzzle_solving: "/img/posts/S_Team/solving.jpg"
+    puzzle_solved: "/img/posts/S_Team/solved.jpg"
+    wires_1: "/img/posts/S_Team/wires_1.jpg"
+    wires_2: "/img/posts/S_Team/wires_2.jpg"
+    final: "/img/posts/S_Team/final.jpg"
 ---
 
 <h3>Description</h3>
@@ -32,13 +42,32 @@ gameplay: "https://www.youtube.com/embed/LnSK6H21Vuw"
 <h3>Features</h3>
 
 <h5>Level 1 Design</h5>
-    <p>Chess problem //***</p>
-<br>
-
-<h5>Level 3</h5>
-    <p>Puzzle with blocks and lava //***</p>
+    <p>For the first level we wanted to teach the player to change the characters and showcase the power of one of the characters, in this case the engineer.</p>
+    <p>The power of the engineer is to move orange-glowing objects, so I had the idea to make a simple chess puzzle where you had to move one piece to win the match. To make it easier for players who didn't know how to play chess, the problem is a basic back rank mate, you have to push the rook to mate the black king.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.level_1 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Level 1</span>
 <br>
 
 <h5>Technology Power</h5>
-    <p>Connect the dots minigame //***</p>
+    <p>I was in charge of designing and implementing the ability for the technology character.</p>
+    <p>The ability can be used in the yellow controls found in the levels 3 and 5. The puzzle in level 3 is the easy version and the one in level 5 has one more step in difficulty.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.power_2 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Control Post</span>
+
+    <p>The idea was to make a small minigame of connecting the dots, resembling the connection of wires. The player has to connect same colored dots without crossing other colors to complete the puzzle.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.wires_1 | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.wires_2 | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Wires Puzzles</span>
+<br>
+
+<h5>Level 3</h5> //***
+    <p>Puzzle with blocks and lava</p>
+    <p>Tiny door and connect wires simple</p>
+    <p>Moving platform and final</p>
 <br>
