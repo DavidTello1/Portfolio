@@ -46,15 +46,15 @@ images:
     
     <p>As interactable objects there are moving grids you can grip and move inside, they provide a small challenge forcing the player to time the jumps with the movement of the grids.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.grids | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.grids | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
     </div>
     <span class="caption text-muted">Grids</span>
     
     <p>One idea I really liked was to have both levels interconnected and you had to switch between them to get keys and open locks. To achieve this I added the 'Special Boxes' which are boxes that when you latch onto them they carry you in its path. </p>
     <p>In each level there are the same number of boxes and they are linked one to one, when one of them moves the other will move aswell in its own map and when you change the level it will appear in its new position.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.level_1 | prepend: site.baseurl }}" alt="">
-        <img class="img-fluid" src="{{ page.images.level_2 | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.level_1 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+        <img class="img-fluid" src="{{ page.images.level_2 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Levels</span>
 <br>
@@ -68,7 +68,7 @@ images:
     <p>- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put. A little detail I added for the land enemy is that when it dies, its corpse will stay there.</p>
     <p>- Special Boxes: keys to advance the level, interconnected with the boxes in the other level.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.dash | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.dash | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
     </div>
     <span class="caption text-muted">Dash Attack</span>
     <div class="text-center">
@@ -80,7 +80,7 @@ images:
     </div>
     <span class="caption text-muted">Land Enemy</span>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.special_boxes | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.special_boxes | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
     </div>
     <span class="caption text-muted">Special Boxes</span>
 <br>
@@ -89,7 +89,7 @@ images:
     <p>The scene manager is in charge of loading and saving the level data, and transitioning from one map to another.</p>
     <p>The levels were done in Tiled and the maps loaded using xml.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.transition | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.transition | prepend: site.baseurl }}" alt=""  style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Map Transition</span>
 <br>
