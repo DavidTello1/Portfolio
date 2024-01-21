@@ -54,32 +54,37 @@ images:
     <p>In each level there are the same number of boxes and they are linked one to one, when one of them moves the other will move aswell in its own map and when you change the level it will appear in its new position.</p>
     <div class="text-center">
         <img class="img-fluid" src="{{ page.images.level_1 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Level 1</span>
+    <div class="text-center">
         <img class="img-fluid" src="{{ page.images.level_2 | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
-    <span class="caption text-muted">Levels</span>
+    <span class="caption text-muted">Level 2</span>
 <br>
 
 <h5>Entity System</h5>
     <p>The entity system is a factory class that manages the creation and deletion of all the entities and ensures they are updated accordingly.</p>
     <p>The entities are the following:</p>
     <p>- Player: the player controled by the user, including its movement and interactions: jump, wall-jump, dash and grip.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.dash | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Dash Attack</span>
+
     <p>- Coins: coins you can collect that give you points.</p>
     <p>- Grids: moving grids you can grip to advance the level.</p>
     <p>- Enemies: there are two enemies in the game, one is grounded and the other flies. Its AI system is very straightforward: if the player enters in its range it will persue them, if not just stay put. A little detail I added for the land enemy is that when it dies, its corpse will stay there.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.flying_enemy | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.land_enemy | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Enemies</span>
+    
     <p>- Special Boxes: keys to advance the level, interconnected with the boxes in the other level.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.dash | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
-        <span class="caption text-muted">Dash Attack</span>
-
-        <img class="img-fluid" src="{{ page.images.flying_enemy | prepend: site.baseurl }}" alt="">
-        <span class="caption text-muted">Flying Enemy</span>
-
-        <img class="img-fluid" src="{{ page.images.land_enemy | prepend: site.baseurl }}" alt="">
-        <span class="caption text-muted">Land Enemy</span>
-
         <img class="img-fluid" src="{{ page.images.special_boxes | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
-        <span class="caption text-muted">Special Boxes</span>
     </div>
+    <span class="caption text-muted">Special Boxes</span>
 <br>
 
 <h5>Scene Manager</h5>
