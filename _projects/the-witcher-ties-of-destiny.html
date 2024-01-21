@@ -42,11 +42,12 @@ images:
 
 <h5>Game Loop</h5>
     <p>Implementation of the win and lose cycle in the game.</p>
+    <p>When both players die, the loose animation is showed and they restart from the last checkpoint. When the game is completed the win animation is shown.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.victory | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
-        <img class="img-fluid" src="{{ page.images.defeat | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+        <img class="img-fluid" src="{{ page.images.victory | prepend: site.baseurl }}" alt="" style="max-height: 270px;">
+        <img class="img-fluid" src="{{ page.images.defeat | prepend: site.baseurl }}" alt="" style="max-height: 270px;">
     </div>
-    <span class="caption text-muted">Win & Loose</span>
+    <span class="caption text-muted">Win & Loose Animations</span>
 <br>
 
 <h5>Checkpoint System</h5>
