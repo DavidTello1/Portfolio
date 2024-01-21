@@ -11,6 +11,13 @@ repository: "https://github.com/Broken-Gem-Studio/The-Witcher-Ties-of-Destiny"
 website: "https://tiesofdestiny.com/"
 download: "https://github.com/Broken-Gem-Studio/The-Witcher-Ties-of-Destiny/releases/download/1.0/TheWitcherTiesofDestiny_installer.msi"
 gameplay: "https://www.youtube.com/embed/3elLSQatS-0"
+images:
+    ui_system: "/img/posts/Ties_of_Destiny/ui_system.gif"
+    victory: "/img/posts/Ties_of_Destiny/victory.gif"
+    defeat: "/img/posts/Ties_of_Destiny/defeat.gif"
+    checkpoints: "/img/posts/Ties_of_Destiny/checkpoints.gif"
+    credits: "/img/posts/Ties_of_Destiny/credits.gif"
+    hordes: "/img/posts/Ties_of_Destiny/hordes.gif"
 ---
 
 <h3>Description</h3>
@@ -27,21 +34,42 @@ gameplay: "https://www.youtube.com/embed/3elLSQatS-0"
 
 <h5>UI System</h5>
     <p>Programming the structure and main functionalities of the system, like creation/deletion, billboarding, textures, canvas system, etc. Also implementing the first working versions of the Button, Image, Canvas and Circular Bar elements.</p>
+    <div class="text-center">
+    <img class="img-fluid" src="{{ page.images.ui_system | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Coins</span>
 <br>
 
 <h5>Game Loop</h5>
     <p>Implementation of the win and lose cycle in the game.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.victory | prepend: site.baseurl }}" alt="">
+        <img class="img-fluid" src="{{ page.images.defeat | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Win & Loose</span>
 <br>
 
 <h5>Checkpoint System</h5>
     <p>Implementation of the checkpoints in both levels as well as some debug functions to make testing easier.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.checkpoints | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Checkpoints</span>
 <br>
 
 <h5>Credits Scene</h5>
     <p>Coding the credits scene.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.credits | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Credits Scene</span>
 <br>
 
 <h5>Horde System</h5>
     <p>Creation of a system to spawn rounds of enemies that allows the easy modification of its parameters, like number of enemies, delay between rounds, spawn rate, etc.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.hordes | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Horde System</span>
 <br>
     
