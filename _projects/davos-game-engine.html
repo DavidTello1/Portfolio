@@ -11,6 +11,10 @@ repository: "https://github.com/ponspack9/GameEngine"
 website: "https://ponspack9.github.io/GameEngine/"
 download: "https://github.com/ponspack9/GameEngine/releases/download/Third/DavosGameEngine-Assignment3.zip"
 gameplay: "https://www.youtube.com/embed/bezXi0YwCZg"
+images:
+    configuration: "/img/posts/Davos/configuration.png"
+    assets: "/img/posts/Davos/assets.gif"
+    ui_system: "/img/posts/Davos/ui_system.gif"
 ---
 
 <h3>Description</h3>
@@ -36,9 +40,21 @@ gameplay: "https://www.youtube.com/embed/bezXi0YwCZg"
     <p>Dear ImGui library was used to create and handle the GUI of the project.</p>
     <p>I coded the panels layout with the GUI module, adding docking and modifying the style. For the panels themselves I was in charge of the Configuration Panel and the Assets Browser.</p>
     <p>- The configuration panel is the panel where the user can change all the settings for the project and view a general status of the app.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.configuration | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Configuration Panel</span>
     <p>- The assets browser is the panel that connects the resource manager with the user, it is the visual component for the filesystem and lets the user create and modify files from inside the engine.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.assets | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">Assets Browser</span>
 <br>
 
 <h5>UI System</h5>
     <p>Implementation of the UI Manager which controls the lifecycle of the UI elements in the scene. As well as adding support for loading images and creating buttons.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.ui_system | prepend: site.baseurl }}" alt="">
+    </div>
+    <span class="caption text-muted">UI Elements</span>
 <br>
