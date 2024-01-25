@@ -4,24 +4,74 @@ order: 2
 title: "Optimization Techniques for a 2D Engine"
 subtitle: "Final Degree Project"
 thumbnail: "tfg.png"
-description: "My final degree project, it is a small 2D engine written in C++ that can be executed in any Windows machine and can handle more than 10.000 entities interacting with each other in real time. "
+description: "My final degree project, it is a small 2D engine written in C++ that can be executed in any Windows machine and can handle more than 10.000 entities interacting with each other in real time."
 year: "2022"
 numMembers: "1"
 repository: "https://github.com/DavidTello1/2D-Renderer"
 download: "https://github.com/DavidTello1/2D-Renderer/releases/download/v1.0/Release_v1.0.zip"
 gameplay: "https://www.youtube.com/embed/tiB8eBtxa1I"
+images:
+    oop: "/img/posts/TFG/oop.png"
+    ecs: "/img/posts/TFG/ecs.png"
+    rendering: "/img/posts/TFG/rendering.png"
+    space_partitioning: "/img/posts/TFG/space_partitioning.png"
+    results: "img/posts/TFG/results.png"
 ---
 
 <h3>Description</h3>
-    <p>//***</p>
+    <p>The project is divided into four different versions where a specific optimization or group of optimizations is implemented, each version is tested against the previous one to ensure the improvement of each optimization technique.</p>
+    <p>The application itself is a minimal 2D engine that allows the user to add and remove asteroids from the scene. These asteroids collide and bounce off each other and the edges of the background.</p>
+    <p>It also has a UI panel to modify some aspects of the game-world and to show debug stats to check if the optimizations implemented are working as intended.</p>
 <br>
 
-<h3>Role</h3>
-    <p>//***</p>
+<h3>Versions</h3>
+
+<h5>First Version - OOP</h5>
+    <p>The first version of the project is the application coded with an object oriented approach. This version serves as the foundation and the optimizations of every version are applied gradually on top of this initial version.</p>
+    <p>The following diagram shows the structure of this version.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.oop | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">First Version Structure</span>
 <br>
 
-<h3>Features</h3>
+<h5>Second Version - ECS</h5>
+    <p>The second version of the project is the implementation of an Entity-Component-System (ECS). It was a complete rework of how the entities' data is stored, accessed and modified, as well as the code regarding components.</p>
+    <p>The following diagram shows the structure of this version.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.ecs | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Second Version Structure</span>
+<br>
 
-<h5>//***</h5>
-    <p>//***</p>
+<h5>Third Version - Rendering Optimizations</h5>
+    <p>The third version of the project consists of two rendering optimizations: frustum culling and batch rendering.</p>
+    <p>Frustum Culling or Camera Clipping is a rendering optimization with the primary focus of lowering the amount of data sent to the GPU. It does this by checking if an object to be rendered is inside the camera boundaries, in other words if it will actually be seen. If the object is outside the camera, it will not be rendered.</p>
+    <p>Batch Rendering is an optimization technique used to lower the amount of draw calls sent to the GPU. Each draw call is a relatively slow operation so, instead of sending each entity separately to the GPU, we can group or batch them together and send them all at the same time to the GPU, which will lower the amount of draw calls and speed up the rendering phase of the application.</p>
+    <p>The following graph shows the improvements of this version with respect to the previous one. Note that this optimization is mainly focused on the scene part of the application.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.rendering | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Comparison between 2nd and 3rd version</span>
+<br>
+
+<h5>Last Version - Space Partitioning</h5>
+    <p>The main optimization of this version is focused on improving the physics calculations with the implementation of a space partitioning algorithm.</p>
+    <p>As we can see in the previous graph, the physics system is the most time consuming part of the application. It takes so much time to compute because we are checking if an entity is colliding against every other entity, which results in a computational cost of O(N^2).</p>
+    <p>Space partitioning algorithms are one way of solving this problem, it consists of the process of dividing a space into non-overlapping regions and any point in the space can lie in exactly one of the regions. By dividing the space we can now check for collisions only between entities that lie in the same subspace, greatly reducing the amount of checks we have to do.</p>
+    <p>For this project I decided implemented a fixed-resolution grid where each division is of the same size. The size I chose was the same as the biggest asteroid that could be created so that they could only be inside a maximum of four sub-spaces at a given time.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.space_partitioning | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Fixed-Resolution Grid</span>
+<br>
+
+<h5>Results</h5>
+    <p>The following graph shows the comparison between all the versions and the gradual improvement after each optimization.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.results | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+    </div>
+    <span class="caption text-muted">Comparison of all versions</span>
+
+    <p>You can read the whole document with all the detailed information about the development of this project <a href="https://drive.google.com/file/d/16K7JhgrRdsgYPf_ZJEIKwKBRTYbvS8QU/view?usp=sharing">here</a>.</p>
 <br>
