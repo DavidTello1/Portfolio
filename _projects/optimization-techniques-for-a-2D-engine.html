@@ -59,7 +59,7 @@ images:
     <p>The main optimization of this version is focused on improving the physics calculations with the implementation of a space partitioning algorithm.</p>
     <p>As we can see in the previous graph, the physics system is the most time consuming part of the application. It takes so much time to compute because we are checking if an entity is colliding against every other entity, which results in a computational cost of O(N^2).</p>
     <p>Space partitioning algorithms are one way of solving this problem, it consists of the process of dividing a space into non-overlapping regions and any point in the space can lie in exactly one of the regions. By dividing the space we can now check for collisions only between entities that lie in the same subspace, greatly reducing the amount of checks we have to do.</p>
-    <p>For this project I decided implemented a fixed-resolution grid where each division is of the same size. The size I chose was the same as the biggest asteroid that could be created so that they could only be inside a maximum of four sub-spaces at a given time.</p>
+    <p>For this project I decided to implement a fixed-resolution grid where each division is of the same size. The size I chose was the same as the biggest asteroid that could be created so that they could only be inside a maximum of four sub-spaces at a given time.</p>
     <div class="text-center">
         <img class="img-fluid" src="{{ page.images.space_partitioning | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
