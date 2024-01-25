@@ -15,7 +15,7 @@ images:
     ecs: "/img/posts/TFG/ecs.png"
     rendering: "/img/posts/TFG/rendering.png"
     space_partitioning: "/img/posts/TFG/space_partitioning.png"
-    results: "img/posts/TFG/results.png"
+    results: "/img/posts/TFG/results.png"
 ---
 
 <h3>Description</h3>
@@ -30,7 +30,7 @@ images:
     <p>The first version of the project is the application coded with an object oriented approach. This version serves as the foundation and the optimizations of every version are applied gradually on top of this initial version.</p>
     <p>The following diagram shows the structure of this version.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.oop | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.oop | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">First Version Structure</span>
 <br>
@@ -39,7 +39,7 @@ images:
     <p>The second version of the project is the implementation of an Entity-Component-System (ECS). It was a complete rework of how the entities' data is stored, accessed and modified, as well as the code regarding components.</p>
     <p>The following diagram shows the structure of this version.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.ecs | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.ecs | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Second Version Structure</span>
 <br>
@@ -50,7 +50,7 @@ images:
     <p>Batch Rendering is an optimization technique used to lower the amount of draw calls sent to the GPU. Each draw call is a relatively slow operation so, instead of sending each entity separately to the GPU, we can group or batch them together and send them all at the same time to the GPU, which will lower the amount of draw calls and speed up the rendering phase of the application.</p>
     <p>The following graph shows the improvements of this version with respect to the previous one. Note that this optimization is mainly focused on the scene part of the application.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.rendering | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.rendering | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Comparison between 2nd and 3rd version</span>
 <br>
@@ -61,7 +61,7 @@ images:
     <p>Space partitioning algorithms are one way of solving this problem, it consists of the process of dividing a space into non-overlapping regions and any point in the space can lie in exactly one of the regions. By dividing the space we can now check for collisions only between entities that lie in the same subspace, greatly reducing the amount of checks we have to do.</p>
     <p>For this project I decided implemented a fixed-resolution grid where each division is of the same size. The size I chose was the same as the biggest asteroid that could be created so that they could only be inside a maximum of four sub-spaces at a given time.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.space_partitioning | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.space_partitioning | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Fixed-Resolution Grid</span>
 <br>
@@ -69,7 +69,7 @@ images:
 <h5>Results</h5>
     <p>The following graph shows the comparison between all the versions and the gradual improvement after each optimization.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.results | prepend: site.baseurl }}" alt="" style="max-height: 255px;">
+        <img class="img-fluid" src="{{ page.images.results | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
     <span class="caption text-muted">Comparison of all versions</span>
 
