@@ -10,18 +10,80 @@ numMembers: "1"
 repository: "https://github.com/DavidTello1/WaveFunctionCollapse"
 download: ""
 gameplay: ""
+images:
+    propagation:    "/img/posts/Map_Generator/"
+    tile_manager:   "/img/posts/Map_Generator/"
+    combinations:   "/img/posts/Map_Generator/"
+    preset:         "/img/posts/Map_Generator/"
+    pan_and_zoom:   "/img/posts/Map_Generator/"
+    debug_panel:    "/img/posts/Map_Generator/"
+    
 ---
 
 <h3>Description</h3>
-    <p>//***</p>
-<br>
-
-<h3>Role</h3>
-    <p>//***</p>
+    <p>This is a personal project I did during my free time as a challenge and to learn more about procedurally generated content.</p>
+    <p>It is divided into two parts, the first one is the implementation of the Wave-Function-Collapse algorithm, and the second is the creation of a tool to help create the tileset and adjacency rules in a more efficient manner.</p>
 <br>
 
 <h3>Features</h3>
 
-<h5>//***</h5>
-    <p>//***</p>
+<h5>Wave-Function-Collapse Algorithm</h5>
+    <p>The algorithm operates by iteratively collapsing possibilities based on a set of adjacency rules for each possible tile. During each iteration, the algorithm analyzes the neighboring patterns around each grid cell, considering their compatibility and enforcing constraints. The collapse process continues until the entire output grid is filled, adhering to the specified rules and constraints. This iterative approach allows the WFC algorithm to generate intricate and complex patterns.</p>
+    <p>The algorithm itself is divided in three parts:</p>
+    <p>- An heuristic pick to select the tile to collapse based on the total number of possibilites available, the grid cell with the lowest available possibilities will be the first to be collapsed. If there are more than one with the same number of possibilites, it is randomly chosen between them.</p>
+    <p>- The collapse of the cell, basically choosing randomly from the available tiles.</p>
+    <p>- The propagation to the neighbouring tiles, updating their possible tiles. If a neighbour has reduced its possible tiles, it continues the propagation to its neighbours until there are no changed neighbours.</p>
+    <p>- Repeat until the map is completed.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.propagation | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Step by step propagation</span>
+<br>
+
+<h5>Tileset Manager</h5>
+    <p>The main disadvantage of the algorithm is the need to set the adjacency rules for each tile. If we had to do it manually it would take too much time, as there has to be a rule for each side of the tile: top, bottom, left and right. If the number of tiles is relatively big it can be very time consuming and prone to error to set the rules manually.</p>
+    <p>In order to make this process more efficient, I created the tool to manage the tileset and its rules. It allows the user to easily import and modify the adjacency rules for each tile in a visual manner.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.tile_manager | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Tile Manager</span>
+
+    <p>There is also the possibility to see all the tiles' combinations at the same time to check for errors and correct them.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.combinations | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Tile combinations</span>
+<br>
+
+<h5>Custom Data Structures</h5>
+    <p>I decided to not use the standard template library data structures and insted use my own as a way of practicing and learning more in depth about their inner functionings.</p>
+    <p>The data structures used for this project were a static array, a dynamic array, a doubly-linked list, a bitset or bitarray and a string class.</p>
+<br>
+
+<h5>Map Generator</h5>
+    <p>The map generator scene shows the grid where the map will be created and it lets you preset cells if you want to have predefined tiles. The algorithm will respect this preset cells and propagate from them.</p>
+    <p>There are UI buttons for each cell of the grid and you can multiselect or deselect them.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.preset | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Prest Cells</span>
+
+    <p>The camera can be panned and zoomed. For the zoom, I made it so that the mouse position is the center of the zoom operation, in this way the zoom will keep this position static making it more responsive and easy to use.</p>
+    <div class="text-center">
+    <img class="img-fluid" src="{{ page.images.pan_and_zoom | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Camera Pan and Zoom</span>
+<br>
+
+<h5>Debug Features</h5>
+    <p>There is a UI panel in the map generator scene to give the user some debug functionalities. They are the following:</p>
+    <p>- Play, Step and Stop buttons to control the state of the generation.</p>
+    <p>- Changing the map size.</p>
+    <p>- Presetting and clearing cells.</p>
+    <p>- Inspection of cells during runtime, if the map is generated with the step button.</p>
+    <p>- Showing or hiding the separation between grid cells.</p>
+    <div class="text-center">
+        <img class="img-fluid" src="{{ page.images.debug_panel | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+    </div>
+    <span class="caption text-muted">Debug Panel</span>
 <br>
