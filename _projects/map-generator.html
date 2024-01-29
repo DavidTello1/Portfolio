@@ -11,13 +11,12 @@ repository: "https://github.com/DavidTello1/WaveFunctionCollapse"
 download: ""
 gameplay: ""
 images:
-    propagation:    "/img/posts/Map_Generator/"
-    tile_manager:   "/img/posts/Map_Generator/"
-    combinations:   "/img/posts/Map_Generator/"
-    preset:         "/img/posts/Map_Generator/"
-    pan_and_zoom:   "/img/posts/Map_Generator/"
-    debug_panel:    "/img/posts/Map_Generator/"
-    
+    propagation:        "/img/posts/Map_Generator/propagation.gif"
+    tile_manager:       "/img/posts/Map_Generator/tile_manager.png"
+    combinations:       "/img/posts/Map_Generator/combinations.png"
+    preset:             "/img/posts/Map_Generator/preset.png"
+    pan_and_zoom:       "/img/posts/Map_Generator/camera.gif"
+    cell_inspection:    "/img/posts/Map_Generator/cell_inspection.png"
 ---
 
 <h3>Description</h3>
@@ -78,12 +77,13 @@ images:
 <h5>Debug Features</h5>
     <p>There is a UI panel in the map generator scene to give the user some debug functionalities. They are the following:</p>
     <p>- Play, Step and Stop buttons to control the state of the generation.</p>
+    <p>- Time elapsed: step time and total time to generate the map.</p>
     <p>- Changing the map size.</p>
     <p>- Presetting and clearing cells.</p>
     <p>- Inspection of cells during runtime, if the map is generated with the step button.</p>
     <p>- Showing or hiding the separation between grid cells.</p>
     <div class="text-center">
-        <img class="img-fluid" src="{{ page.images.debug_panel | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
+        <img class="img-fluid" src="{{ page.images.cell_inspection | prepend: site.baseurl }}" alt="" style="max-height: 300px;">
     </div>
-    <span class="caption text-muted">Debug Panel</span>
+    <span class="caption text-muted">Cell Inspection</span>
 <br>
